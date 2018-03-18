@@ -3,7 +3,8 @@
 const defaultState = {
 
   color: 'red',
-    captcha: ''
+    captcha: '',
+    status: false
 };
 
 
@@ -20,6 +21,12 @@ const mainReducer = (state = defaultState, action) => {
               ...state,
               captcha: action.captcha
 
+          };
+
+      case 'SIGNUP_RESPONSE':
+          return {
+              ...state,
+              status: action.status
           };
     default:
 

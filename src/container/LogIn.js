@@ -1,8 +1,38 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import * as actionCreators from '../actions/index';
+import Recaptcha from 'react-grecaptcha';
+
+
 
 class LogIn extends React.Component {
+
+    state = {
+
+        email: '',
+        password: '',
+        confirmPassword: '',
+        firstName: '',
+        lastName: '',
+        'g-recaptcha-response': ''
+    };
+
+    verifyCallback = (response) => {
+        console.log(response);
+        this.setState({'g-recaptcha-response': response});
+
+
+        console.log(this.state);
+    };
+
+    expiredCallback = () => {
+        console.log('test');
+    };
+
+    sendData = () => {
+        this.props.signUpResponse('b.eiranvandkarim@gmail.com', '12345', '12345', 'karim', 'beiranvand', 'dgdgdg');
+    }
+
     render(){
         return(
             <div>
@@ -13,6 +43,19 @@ class LogIn extends React.Component {
                 <span>{this.props.captcha}</span>
 
                 <button onClick={() => this.props.loadRecaptcha()}>get captcha</button>
+                <button onClick={() => this.sendData()}>send signup data</button>
+
+
+                <Recaptcha
+                    sitekey={'6Lciqj8UAAAAAIiMhAqDVA31pYeKYTOC-epp606q'}
+                    callback={this.verifyCallback}
+                    expiredCallback={this.expiredCallback}
+                    locale="fa"
+                    className="customClassName"
+                    data-theme="dark"
+                />
+
+
             </div>
         )
     }

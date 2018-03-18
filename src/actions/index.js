@@ -37,3 +37,32 @@ export function loadRecaptcha() {
     }
 
 }
+
+
+export function signUpPost() {
+
+    return {
+        type: 'SIGNUP_RESPONSE',
+        status: true
+    }
+}
+
+
+export function signUpResponse(email, password, confirmPassword, firstName, lastName, gRecaptchaResponse) {
+
+    return (dispatch) => {
+        axios.post('https://jibramzi.herokuapp.com/signup', {
+            email: email,
+            password: password,
+            confirmPassword: confirmPassword,
+            firstName: firstName,
+            lastName: lastName,
+            'g-recaptcha-response': gRecaptchaResponse
+
+        }).then((response) => {
+            console.log(response.data.captcha);
+            dispatch(signUpPost());
+        });
+    }
+
+}

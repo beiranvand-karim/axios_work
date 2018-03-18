@@ -2,7 +2,8 @@
 
 const defaultState = {
 
-  color: 'red'
+  color: 'red',
+    captcha: ''
 };
 
 
@@ -13,6 +14,13 @@ const mainReducer = (state = defaultState, action) => {
         ...state,
         color: action.color,
       };
+
+      case 'GET_RECAPTCHA':
+          return {
+              ...state,
+              captcha: action.captcha
+
+          };
     default:
 
       return {

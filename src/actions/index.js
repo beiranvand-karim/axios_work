@@ -14,3 +14,26 @@ export function loadColor() {
     });
   };
 }
+
+
+export function getRecapthca(captcha) {
+
+    return {
+        type: 'GET_RECAPTCHA',
+        captcha: 'karim'
+    }
+    
+}
+
+
+export function loadRecaptcha() {
+
+    return (dispatch) => {
+
+        axios.get('https://jibramzi.herokuapp.com/recaptcha').then((response) => {
+            console.log(response.data.captcha);
+            dispatch(getRecapthca(response.data.captcha));
+        });
+    }
+
+}

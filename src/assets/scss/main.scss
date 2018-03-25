@@ -1,6 +1,7 @@
 
 
 
+
 * {
   box-sizing: border-box;
 }
@@ -18,3 +19,11 @@ body {
   color: #333;
   background-color: #fff;
 }
+
+
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+@import "footer";

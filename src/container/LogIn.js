@@ -14,7 +14,7 @@ class LogIn extends React.Component {
         confirmPassword: '',
         firstName: '',
         lastName: '',
-        'g-recaptcha-response': ''
+        gRecaptchaResponse: ''
     };
 
     verifyCallback = (response) => {
@@ -30,8 +30,8 @@ class LogIn extends React.Component {
     };
 
     sendData = () => {
-        this.props.signUpResponse('b.eiranvandkarim@gmail.com', '12345', '12345', 'karim', 'beiranvand', 'dgdgdg');
-    }
+        this.props.signUpResponse('be.iranvandkarim@gmail.com', '12345', '12345', 'karim', 'beiranvand', this.state.gRecaptchaResponse);
+    };
 
     render(){
         return(

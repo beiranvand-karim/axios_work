@@ -5,7 +5,7 @@ import './Home.scss';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import LogIn from './LogIn';
 import Footer from './Footer';
-import About from './About';
+import AboutPage from "./AboutPage";
 
 class Home extends React.Component {
     render(){
@@ -19,7 +19,7 @@ class Home extends React.Component {
                     </div>
                     <Switch>
                         <Route path="/log-in" component={LogIn} />
-                        <Route path="/about" component={About} />
+                        <Route path="/about" component={AboutPage} />
                     </Switch>
                     <Footer />
                     {/*<BoxCon />*/}

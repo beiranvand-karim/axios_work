@@ -16,6 +16,11 @@ import digitalCurrencyGroup from '../assets/img/investors/Digital-Currency-Group
 import prudenceHolding from '../assets/img/investors/prudence-holding.svg';
 import wicklowCapital from '../assets/img/investors/wicklow-capital.svg';
 import futurePerfectVentures from '../assets/img/investors/future-perfect-ventures.svg';
+import aboutConvention from '../assets/img/about_convention.png';
+import aboutDetails from '../assets/img/about_details.png';
+import aboutEnduser from '../assets/img/about_enduser.png';
+import aboutHuman from '../assets/img/about_human.png';
+import aboutSecurity from '../assets/img/about_security.png';
 import './About.scss';
 
 export default function About() {
@@ -148,7 +153,6 @@ export default function About() {
                 </div>
             </div>
 
-
             <div className="investment-info flex-center">
 
                 <div className="container">
@@ -261,6 +265,103 @@ export default function About() {
 
 
                 </div>
+            </div>
+
+
+            <div className="values bg-white">
+
+                <div className="container">
+
+                    <h3 className="center em-200">
+                        Our collective desire to offer financial empowerment is driven by our values.
+                        <br/>
+                        They act as our organization's North Star.
+                    </h3>
+
+                    <div className="container">
+
+                        <div className="value flex-center col-md-6">
+
+                            <img src={aboutConvention} alt=""/>
+
+
+                            <span className="pll em-200">
+                                We challenge the status quo and transcend the boundaries of today to create an open financial future that supports the broadest global community possible. We've been told that getting to where we are today would be impossible so we decided we were just getting started.
+                            </span>
+
+                        </div>
+
+                        <div className="value flex-center col-md-6">
+
+                            <img src={aboutEnduser} alt=""/>
+
+
+                            <span className="pll em-200">
+                                Our customers should own their financial future so we empower them to "Be Your Own Bank". Our users come first.
+                            </span>
+
+                        </div>
+                    </div>
+
+                    <div className="container">
+
+                        <div className="value flex-center col-md-6">
+
+                            <img src={aboutHuman} alt=""/>
+
+
+                            <span className="pll em-200">
+                                We build connections with each other and our users by communicating frequently, authentically and openly and we build trust by doing what we say we'll do. We're big on accountability and high standards, but not on unnecessary rules.
+                            </span>
+
+                        </div>
+
+                        <div className="value flex-center col-md-6">
+
+                            <img src={aboutSecurity} alt=""/>
+
+
+                            <span className="pll em-200">
+                                Our users' security and privacy are critical to our success and we will not forsake them in service of our ambition.
+                            </span>
+
+                        </div>
+                    </div>
+
+                    <div className="container">
+
+                        <div className="value flex-center col-md-6">
+
+                            <img src={aboutDetails} alt=""/>
+
+
+                            <span className="pll em-200">
+                                We believe we cannot get the big things right if we don't get the little things right first. Sometimes that makes things harder. Luckily, we're ok with hard.
+                            </span>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="meet">
+
+
+                <div className="pvvl flex-center flex-column center">
+
+                    <h3 className="em-100 lh1 type-mlrg ls-title uppercase dark-blue container-xs">
+                        MEET THE PEOPLE WHO ARE
+                        <br/>
+                        MAKING IT ALL HAPPEN
+                    </h3>
+
+                    <a href="" className="button-primary mtl">
+                        MEET THE TEAM
+                    </a>
+                </div>
+
             </div>
 
         </div>

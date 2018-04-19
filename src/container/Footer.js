@@ -29,7 +29,7 @@ class Footer extends React.Component {
                             <ol>
 
                                 <li>
-                                    <a href="/">Wallet</a>
+                                    <Link to="wallet">Wallet</Link>
                                 </li>
                                 <li>
                                     <a href="/">API</a>

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Wallet.scss';
 
 export default function Wallet() {
 
@@ -42,8 +43,6 @@ export default function Wallet() {
                                 <i className="icon-bitcoin"></i>
 
                                 <span>BITCOIN</span>
-
-                                <span>Transactions</span>
 
                             </a>
 
@@ -90,23 +89,32 @@ export default function Wallet() {
 
                                 <div className="message-beacon green"></div>
 
-                                <div className="message-contextual pal ng-hide">
-                                    <p className="mbl">
-                                        You can now trade bitcoin with your Blockchain wallet! Click below to get started.
-                                    </p>
+                                {/*<div className="message-contextual pal ng-hide">*/}
+                                    {/*<p className="mbl">*/}
+                                        {/*You can now trade bitcoin with your Blockchain wallet! Click below to get started.*/}
+                                    {/*</p>*/}
 
-                                    <div className="flex-center flex-around">
+                                    {/*<div className="flex-center flex-around">*/}
 
-                                        <a className="border-grey" href="">No thanks</a>
+                                        {/*<a className="border-grey" href="">No thanks</a>*/}
 
-                                        <a className="button-success-alt">Trade Bitcoin</a>
-                                    </div>
+                                        {/*<a className="button-success-alt">Trade Bitcoin</a>*/}
+                                    {/*</div>*/}
 
-                                </div>
+                                {/*</div>*/}
 
 
 
                             </div>
+
+
+                            <a href="">
+
+                                <i className="icon-buy-sell"></i>
+
+                                <span>BUY & SELL BITCOIN</span>
+
+                            </a>
 
                         </li>
 
@@ -128,26 +136,26 @@ export default function Wallet() {
 
                         <li className="header mbm">
 
-                            <div className="message pointer ng-hide">
+                            {/*<div className="message pointer ng-hide">*/}
 
-                                <div className="message-beacon red">
+                                {/*<div className="message-beacon red">*/}
 
-                                </div>
+                                {/*</div>*/}
 
-                                <div className="message-contextual pal ng-hide">
+                                {/*<div className="message-contextual pal ng-hide">*/}
 
-                                    <p className="mbl">
-                                        We’re thrilled you’re using your Blockchain wallet! But it looks like you’re still not as secure as you could be. Securing your wallet can help keep funds safe.
-                                    </p>
+                                    {/*<p className="mbl">*/}
+                                        {/*We’re thrilled you’re using your Blockchain wallet! But it looks like you’re still not as secure as you could be. Securing your wallet can help keep funds safe.*/}
+                                    {/*</p>*/}
 
-                                    <div className="flex-center flex-around">
+                                    {/*<div className="flex-center flex-around">*/}
 
-                                        <a href="" className="border-grey">No thanks</a>
+                                        {/*<a href="" className="border-grey">No thanks</a>*/}
 
-                                        <a href="" className="button-success-alt">Secure Wallet</a>
-                                    </div>
-                                </div>
-                            </div>
+                                        {/*<a href="" className="button-success-alt">Secure Wallet</a>*/}
+                                    {/*</div>*/}
+                                {/*</div>*/}
+                            {/*</div>*/}
 
                             <a href="">
                                 <i className="icon-lock"></i>
@@ -172,7 +180,7 @@ export default function Wallet() {
 
                             <ul className="scroll-settings aside-list pas ng-hide">
 
-                                <li className="mts mbm">
+                                <li className="mts mbm active">
 
                                     <a href="" className="pas">
 

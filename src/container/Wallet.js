@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import BitCoinTransactions from "../component/BitCoinTransactions";
 import EtherTransactions from "../component/EtherTransactions";
 import BitCoinCashTransactions from "../component/BitCoinCashTransactions";
+import DashboardHome from "../component/DashboardHome";
 
 export default function Wallet() {
 
@@ -25,7 +26,9 @@ export default function Wallet() {
                                 <a href="">
                                     <i className="icon-home"></i>
 
-                                    <span>DASHBOARD</span>
+                                    <span>
+                                        <Link to='/wallet/home'>DASHBOARD</Link>
+                                    </span>
                                 </a>
                             </li>
 
@@ -369,6 +372,7 @@ export default function Wallet() {
                     <Route path='/btc/transactions' component={BitCoinTransactions} />
                     <Route path='/eth/transactions' component={EtherTransactions} />
                     <Route path='/bch/transactions' component={BitCoinCashTransactions} />
+                    <Route path='/wallet/home' component={DashboardHome} />
 
 
                 </Switch>

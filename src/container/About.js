@@ -29,6 +29,7 @@ export default function About() {
         <div className="wrapper">
 
             <div className="by-the-numbers bg-white">
+
                 <div className="container">
 
                     <div className="flex-center flex-justify">
@@ -47,9 +48,9 @@ export default function About() {
 
                             <div>
 
-                  <span className="num">
-                    <span className="num">15</span>,000,000+
-                  </span>
+                              <span className="num">
+                                    <span className="num">15</span>,000,000+
+                              </span>
 
                                 <br />
 
@@ -151,6 +152,7 @@ export default function About() {
 
                     </div>
                 </div>
+
             </div>
 
             <div className="investment-info flex-center">

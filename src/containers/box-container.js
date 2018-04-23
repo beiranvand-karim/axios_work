@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 import * as actionCreators from '../actions/index';
 import React from 'react';
-import Box from "../component/box";
+import Box from "../components/box";
 
 
 class BoxCon extends React.Component {

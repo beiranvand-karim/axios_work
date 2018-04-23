@@ -155,18 +155,21 @@ export default function About() {
 
             </div>
 
+
             <div className="investment-info flex-center">
 
                 <div className="container">
 
                     <div className="col-md-3 flex-center flex-row raised">
+
+
                         <img src={aboutMoney} alt="" />
 
                         <div className="flex-column pll">
                             <span className="amount">$70,000,000</span>
                             <span>amount-raised
-                  <br />
-                </span>
+                                <br />
+                            </span>
 
                             <p className="em-200 pts">From the leading investors in Silicon Valley, Wall Street, and London.</p>
 
@@ -193,13 +196,6 @@ export default function About() {
 
                             <a rel="noreferrer nofollow" href="http://lsvp.com/">
                                 <img src={lakeStar} alt="" />
-                            </a>
-                        </div>
-
-                        <div className="col-md-4 col-sm-4 col-xs-6">
-
-                            <a rel="noreferrer nofollow" href="http://lsvp.com/">
-                                <img src={virgin} alt="" />
                             </a>
                         </div>
 
@@ -267,6 +263,7 @@ export default function About() {
 
 
                 </div>
+
             </div>
 
 
@@ -354,9 +351,9 @@ export default function About() {
                 <div className="pvvl flex-center flex-column center">
 
                     <h3 className="em-100 lh1 type-mlrg ls-title uppercase dark-blue container-xs">
-                        MEET THE PEOPLE WHO ARE
+                        meet the people who are
                         <br/>
-                        MAKING IT ALL HAPPEN
+                        making it all happen
                     </h3>
 
                     <a href="" className="button-primary mtl">

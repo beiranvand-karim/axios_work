@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.scss';
-import Home from './container/Home';
+import Home from './containers/Home';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 

@@ -1,13 +1,12 @@
 import React from 'react';
 import spinner from '../assets/wallet/img/spinner-8de10c3e9fd9f1c447099e6d23b5c24931c019da.gif';
+import './NewLogIn.scss';
 
 export default class NewLogIn extends React.Component {
 
-
-
     render() {
 
-        return <div className="overflow-scroll flex-justify flex-center">
+        return <div className="new-login-component overflow-scroll flex-justify flex-center">
 
             <div className="flex-center flex-justify flex-column">
 
@@ -36,7 +35,7 @@ export default class NewLogIn extends React.Component {
                                         Welcome back
                                     </span>
 
-                                    <span className="f-24 lh1 ng-hide">Logged out</span>
+                                    <span className="f-24 lh1 ng-hide" style={{display: 'none'}}>Logged out</span>
 
                                     <span>
                                         <span>or</span>
@@ -76,25 +75,26 @@ export default class NewLogIn extends React.Component {
 
                                         <label htmlFor="UID_input">Wallet ID</label>
 
-                                    </div>
+                                        <div>
 
-                                    <div>
-                                        <input className="form-control ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-required" type="text"/>
 
-                                        <div className="help-block mbn alt-font f-14 ng-hide">
+                                            <input className="form-control ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-required" type="text"/>
 
-                                            <span>
+                                            <div style={{display: 'none'}} className="help-block mbn alt-font f-14 ng-hide">
 
-                                            </span>
-                                        </div>
+                                                <span>
+                                                </span>
+                                            </div>
 
-                                        <div className="help-block mbn alt-font f-14 hidden-xs">
+                                            <div className="help-block mbn alt-font f-14 hidden-xs">
 
-                                            <span>
-                                                Find the login link in your email, e.g.
-                                                <i>blockchain.info/wallet/1111-222-333...</i>
-                                                The series of numbers and dashes at the end of the link is your Wallet ID.
-                                            </span>
+                                                <span>
+                                                    Find the login link in your email, e.g.
+                                                    <i>blockchain.info/wallet/1111-222-333...</i>
+                                                    The series of numbers and dashes at the end of the link is your Wallet ID.
+                                                </span>
+                                            </div>
+
                                         </div>
 
                                     </div>
@@ -119,7 +119,7 @@ export default class NewLogIn extends React.Component {
 
                                 </div>
 
-                                <div className="group mb-15 ng-hide">
+                                <div style={{display: 'none'}} className="group mb-15 ng-hide">
 
                                     <div className="item">
 
@@ -192,7 +192,6 @@ export default class NewLogIn extends React.Component {
                             </div>
 
                             <div>
-
                                 <span>Having some trouble?</span>
                                 &nbsp;
                                 <a href="">View Options</a>

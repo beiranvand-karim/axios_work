@@ -7,6 +7,7 @@ import WalletHome from './WalletHome';
 import Wallet from "./Wallet";
 import NewLogIn from "./NewLogIn";
 import './Home.scss';
+import SignUp from "./SignUp";
 
 
 class Home extends React.Component {
@@ -18,9 +19,11 @@ class Home extends React.Component {
                     <h1>Home</h1>
                     <div>
                         <Link to="/log-in">Log In</Link>
+                        <Link to="/sign-up">Sign Up</Link>
                     </div>
                     <Switch>
                         <Route path="/log-in" component={NewLogIn} />
+                        <Route path="/sign-up" component={SignUp} />
                         <Route path="/about" component={AboutPage} />
                         <Route path="/walletHome" component={WalletHome} />
                         <Route path="/wallet" component={Wallet} />

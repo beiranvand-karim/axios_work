@@ -1,0 +1,131 @@
+
+
+
+div.HomeSub2 {
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  > div {
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+    color: #fefefe;
+    vertical-align: bottom;
+
+    margin-left: -15px;
+    margin-right: -15px;
+
+    > div.first {
+
+      text-align: center;
+      font-size: 24px;
+      color: #fefefe;
+
+      padding-left: 15px;
+      padding-right: 15px;
+
+      min-height: 80px;
+      background-color: #2754ba;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      width: 33.33333333333333%;
+
+      > span {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 200;
+        text-transform: uppercase;
+        color: white;
+
+        > span {
+
+        }
+
+      }
+    }
+    > div.second {
+
+      width: 33.33333333333333%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #123962;
+      min-height: 80px;
+
+      > span#btc {
+
+        font-size: 24px;
+        font-weight: 200;
+        line-height: 1;
+        color: white;
+        display: none;
+
+        > span {
+          font-size: 24px;
+          font-weight: 200;
+          line-height: 1;
+          color: white;
+        }
+
+      }
+
+      > span#eth {
+        font-size: 24px;
+        font-weight: 200;
+        line-height: 1;
+        color: white;
+
+        > span {
+          font-size: 24px;
+          font-weight: 200;
+          line-height: 1;
+          color: white;
+        }
+      }
+
+      > span#bch {
+        font-size: 24px;
+        font-weight: 200;
+        line-height: 1;
+        color: white;
+        display: none;
+
+        > span {
+          font-size: 24px;
+          font-weight: 200;
+          line-height: 1;
+          color: white;
+        }
+      }
+
+    }
+    > div.third {
+      text-align: center;
+      font-size: 24px;
+      color: #fefefe;
+
+      padding-left: 15px;
+      padding-right: 15px;
+
+      width: 33.33333333333333%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #00aee6;
+      min-height: 80px;
+
+      > span {
+        font-size: 24px;
+        font-weight: 200;
+        line-height: 1;
+        color: white;
+      }
+    }
+
+  }
+
+}

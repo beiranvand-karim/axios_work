@@ -1,0 +1,57 @@
+
+
+
+div.about-top-component {
+
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../assets/img/about_header.jpg");
+
+  min-height: 60vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  height: 65vh;
+
+  > h1 {
+    color: white;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 72px;
+    font-weight: 100;
+    margin: 1.25em 0 10px;
+    text-align: center;
+    font-family: inherit;
+
+  }
+
+
+  > p.first {
+      color: #799eb2;
+      width: 750px;
+      padding-top: 0.625em;
+      font-size: 16px;
+      font-weight: 300;
+      margin: 0 0 1.3125em;
+      text-align: center;
+    }
+
+  > p.second {
+    color: #799eb2;
+    width: 750px;
+    margin: 0 0 1.3125em;
+    padding-top: 0.625em;
+    font-size: 16px;
+    font-weight: 300;
+    display: none!important;
+    text-align: center;
+
+    }
+
+
+
+}

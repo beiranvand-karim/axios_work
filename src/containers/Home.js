@@ -19,6 +19,7 @@ import newCityGraphic from '../assets/img/new-city-graphic.png';
 import playButton from '../assets/img/play-button.png';
 import HomeSub1 from "../components/home/HomeSub1";
 import HomeSub2 from "../components/home/HomeSub2";
+import Navigation from "../components/home/Navigation";
 import './Home.scss';
 
 class Home extends React.Component {
@@ -28,7 +29,7 @@ class Home extends React.Component {
             <Router>
 
                 <div className="wrapper home-component">
-
+                    <Navigation />
                     <HomeSub1 />
                     <HomeSub2 />
 

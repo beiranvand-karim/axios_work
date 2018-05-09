@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Footer from './Footer';
 import AboutPage from './AboutPage';
-import WalletHome from './WalletHome';
+import WalletHome from '../components/wallet/WalletHome';
 import Wallet from "./Wallet";
 import NewLogIn from "./NewLogIn";
 import SignUp from "./SignUp";

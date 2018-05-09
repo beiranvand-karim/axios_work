@@ -1,7 +1,7 @@
 import React from 'react';
 import './DashboardHome.scss';
-import spinner from '../assets/wallet/img/spinner-8de10c3e9fd9f1c447099e6d23b5c24931c019da.gif';
-import selectArrow from '../assets/wallet/img/select-arrow-f0c58cd22576da74feefda596447c87d18d9e660.png';
+import spinner from '../../assets/wallet/img/spinner-8de10c3e9fd9f1c447099e6d23b5c24931c019da.gif';
+import selectArrow from '../../assets/wallet/img/select-arrow-f0c58cd22576da74feefda596447c87d18d9e660.png';
 
 export  default function DashboardHome() {
 

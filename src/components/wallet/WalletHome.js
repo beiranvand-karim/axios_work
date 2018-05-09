@@ -1,7 +1,7 @@
 import React from 'react';
-import refresh from '../assets/img/refresh-cf3ee378cf5ca20da155bfe9fbe5e37fe7cc5d38.svg';
-import refreshDev from '../assets/img/refresh-dev-e9561f9d3dd68fccdc1d62374cf5d0ccd35467d3.svg';
-import whiteBlockChain from '../assets/img/white-blockchain-f1208a2b904ce045df3239b1922104bd3fc6a7c1.svg';
+import refresh from '../../assets/img/refresh-cf3ee378cf5ca20da155bfe9fbe5e37fe7cc5d38.svg';
+import refreshDev from '../../assets/img/refresh-dev-e9561f9d3dd68fccdc1d62374cf5d0ccd35467d3.svg';
+import whiteBlockChain from '../../assets/img/white-blockchain-f1208a2b904ce045df3239b1922104bd3fc6a7c1.svg';
 
 
 export default function WalletHome() {

@@ -24,20 +24,20 @@ export default function HomeSub5() {
 
             <div className="second container">
 
-                <div className="merchant flex-column col-md-6 prn">
+                <div className="first merchant flex-column col-md-6 prn">
 
                     <img src={homeMerchant1} alt=""/>
 
                     <div className="merchant-label bg-dark-blue flex-row flex-between">
 
-                        <div>
+                        <div className="right">
                             <span>THE UNCOMMONS</span>
 
                             <span>NEW YORK, NY</span>
 
                         </div>
 
-                        <div>
+                        <div className="left">
 
                             <a href="">
                                 WHY WE USE BITCOIN
@@ -51,23 +51,23 @@ export default function HomeSub5() {
 
                 </div>
 
-                <div className="merchant flex-column col-md-6 prn">
+                <div className="second merchant flex-column col-md-6 prn">
 
                     <img src={homeMerchant2} alt=""/>
 
                     <div className="merchant-label bg-dark-blue flex-row flex-between">
 
-                        <div>
-                            <span>THE UNCOMMONS</span>
+                        <div className="right">
+                            <span>LAY NAY FERME</span>
 
-                            <span>NEW YORK, NY</span>
+                            <span>PROVO, UT</span>
 
                         </div>
 
-                        <div>
+                        <div className="left">
 
                             <a href="">
-                                WHY WE USE BITCOIN
+                            HOW BITCOIN WORKS FOR MY BUSINESS 
 
                                 <img src={homeArrow} alt=""/>
 

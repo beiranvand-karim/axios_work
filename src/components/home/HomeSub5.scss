@@ -37,57 +37,127 @@ div.HomeSub5.bg-white.second {
     flex-direction: row;
     display: flex;
 
-    > div {
+    > div.first {
+      padding: 0;
+      flex-direction: column;
+      display: flex;
+      width: 50%;
 
-      &:nth-child(1) {
-        padding: 0;
-        flex-direction: column;
+      > img {
+        height: 500px;
+        vertical-align: middle;
+        border: 0;
+
+      }
+
+      > div {
+        font-size: 16px;
         display: flex;
-        width: 50%;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #123962;
 
-        > img {
-          height: 500px;
-          vertical-align: middle;
-          border: 0;
+        > div.right {
+          font-weight: 200;
+          padding: 10px;
+          width: 175px;
+          margin-left: 0.625em;
+          font-size: 16px;
+
+          > span {
+            color: white;
+            display: block;
+          }
 
         }
 
-        > div {
-          font-size: 16px;
+        > div.left {
+          font-weight: 200;
+          padding: 10px;
+          justify-content: center;
+          align-items: center;
           display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          background-color: #123962;
+          font-size: 16px;
 
+          > a {
+            padding-left: 5px;
+            font-weight: 400;
+            color: #10ADE4;
+            background: 0 0;
+            text-decoration: none;
 
-          > div {
-
-            &:nth-child(1) {
-              font-weight: 200;
-              padding: 10px;
-              width: 175px;
-              margin-left: 0.625em;
-              font-size: 16px;
-
+            > img {
+              height: 10px;
+              padding-left: 5px;
+              vertical-align: middle;
+              font-weight: 400;
+              color: #10ADE4;
+              transform: rotateZ(180deg);
             }
 
-            &:nth-child(2) {
-              font-weight: 200;
-              padding: 10px;
-              justify-content: center;
-              align-items: center;
-              display: flex;
-              font-size: 16px;
+          }
 
-              > a {
-                padding-left: 5px;
-                font-weight: 400;
-                color: #10ADE4;
-                background: 0 0;
+        }
 
-              }
+      }
+    }
+    > div.second {
+      padding: 0;
+      flex-direction: column;
+      display: flex;
+      width: 50%;
 
-              /* take up here */
+      > img {
+        height: 500px;
+        vertical-align: middle;
+        border: 0;
+      }
+
+      > div {
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #2754ba;
+
+
+        > div.right {
+          font-weight: 200;
+          padding: 10px;
+          width: 175px;
+          margin-left: 0.625em;
+
+          > span {
+            color: white;
+            display: block;
+          }
+
+        }
+
+        > div.left {
+          font-weight: 200;
+          padding: 10px;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+
+          > a {
+            padding-right: 5px;
+            width: 200px;
+            font-weight: 400;
+            color: #10ADE4;
+            text-decoration: none;
+            background: 0 0;
+
+            > img {
+              transform: rotateZ(180deg);
+              height: 10px;
+              padding-left: 5px;
+              vertical-align: middle;
+              border: 0;
+              font-weight: 400;
+              color: #10ADE4;
+              cursor: pointer;
 
             }
 
@@ -96,30 +166,6 @@ div.HomeSub5.bg-white.second {
         }
 
       }
-
-      &:nth-child(2) {
-        padding: 0;
-        flex-direction: column;
-        display: flex;
-        width: 50%;
-
-        > img {
-          height: 500px;
-          vertical-align: middle;
-          border: 0;
-        }
-
-        > div {
-          font-size: 16px;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          background-color: #123962;
-
-        }
-
-      }
-
     }
   }
 

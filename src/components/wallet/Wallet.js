@@ -1,9 +1,9 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
-import BitCoinTransactions from "../components/wallet/BitCoinTransactions";
-import EtherTransactions from "../components/wallet/EtherTransactions";
-import BitCoinCashTransactions from "../components/wallet/BitCoinCashTransactions";
-import DashboardHome from "../components/wallet/DashboardHome";
+import BitCoinTransactions from "./BitCoinTransactions";
+import EtherTransactions from "./EtherTransactions";
+import BitCoinCashTransactions from "./BitCoinCashTransactions";
+import DashboardHome from "./DashboardHome";
 import './Wallet.scss';
 
 export default function Wallet() {

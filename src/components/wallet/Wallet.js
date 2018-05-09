@@ -24,13 +24,13 @@ export default function Wallet() {
                         <ul className="aside flex-1-0">
 
                             <li className="header current">
-                                <a href="">
-                                    <i className="icon-home"></i>
+                                <Link to='/wallet/home'>
+                                    <i className="icon-home">
 
-                                    <span>
-                                        <Link to='/wallet/home'>DASHBOARD</Link>
-                                    </span>
-                                </a>
+                                    </i>
+
+                                    <span>DASHBOARD</span>
+                                </Link>
                             </li>
 
                             <li className="mv-10">
@@ -48,21 +48,21 @@ export default function Wallet() {
                             <li className="scroll-parent header">
 
 
-                                <a href="">
+                                <Link to='/btc/transactions'>
 
-                                    <i className="icon-bitcoin"></i>
+                                    <i className="icon-bitcoin">
 
-                                    <span>
-                                        <Link to='/btc/transactions'>BITCOIN</Link>
-                                    </span>
+                                    </i>
 
-                                </a>
+                                    <span>BITCOIN</span>
+
+                                </Link>
 
                             </li>
 
                             <li className="scroll-parent header">
 
-                                <a href="">
+                                <Link to='/eth/transactions'>
 
                                     <i className="icon-ethereum">
 
@@ -70,18 +70,15 @@ export default function Wallet() {
 
                                     <span className="flex-row flex-align-end">
 
-                                    <span>
-                                        <Link to='/eth/transactions'>ETHER</Link>
-
-                                    </span>
+                                    <span>ETHER</span>
                                 </span>
-                                </a>
+                                </Link>
 
                             </li>
 
                             <li className="scroll-parent header">
 
-                                <a href="">
+                                <Link to='/bch/transactions'>
 
                                     <i className="icon-bitcoin-cash">
 
@@ -89,15 +86,15 @@ export default function Wallet() {
 
                                     <span className="flex-row flex-align-end">
 
-                                    <span>
-                                        <Link to='/bch/transactions'>BITCOIN CASH</Link>
-                                    </span>
+                                    <span>BITCOIN CASH</span>
                                 </span>
-                                </a>
+                                </Link>
 
                             </li>
 
-                            <div className="border-solid mb-15 mt-15 mh-15"></div>
+                            <div className="border-solid mb-15 mt-15 mh-15">
+
+                            </div>
 
 
                             <li className="header">
@@ -127,7 +124,9 @@ export default function Wallet() {
 
                                 <a href="">
 
-                                    <i className="icon-buy-sell"></i>
+                                    <i className="icon-buy-sell">
+
+                                    </i>
 
                                     <span>BUY & SELL BITCOIN</span>
 
@@ -140,7 +139,9 @@ export default function Wallet() {
 
                                 <a href="">
 
-                                    <i className="icon-ExchangeTab"></i>
+                                    <i className="icon-ExchangeTab">
+
+                                    </i>
 
                                     <span className="flex-row flex-align-end">
 
@@ -239,14 +240,18 @@ export default function Wallet() {
 
                                 <a href="">
 
-                                    <i className="icon-help"></i>
+                                    <i className="icon-help">
+
+                                    </i>
 
                                     <span>FAQ</span>
                                 </a>
                             </li>
 
 
-                            <div className="border-solid mb-15 mt-15 mh-15 visible-xs visible-sm"></div>
+                            <div className="border-solid mb-15 mt-15 mh-15 visible-xs visible-sm">
+
+                            </div>
 
 
                             <li className="visible-xs visible-sm header">

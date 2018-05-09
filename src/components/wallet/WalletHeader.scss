@@ -1,0 +1,168 @@
+
+
+div.wallet-top-navigation {
+  flex: 0 0 60px;
+  width: 100%;
+  border: 0;
+  margin-bottom: 0;
+  background-color: #222;
+  border-radius: 4px;
+  position: relative;
+  min-height: 50px;
+  outline: none !important;
+
+  > div.wrapper {
+
+    > nav {
+      height: 60px;
+      background: #004a7c;
+      transition: height .25s, background .25s ease-in-out;
+      position: fixed;
+      width: 100%;
+      z-index: 99;
+      display: block;
+      outline: none !important;
+
+      > ul {
+        height: 60px;
+        padding: 0 25px;
+        align-items: center;
+        display: flex;
+        flex-flow: row nowrap;
+        font-weight: 400;
+        justify-content: flex-start;
+        margin: 0;
+        overflow: hidden;
+        list-style: none;
+
+        > li {
+
+          &:first-of-type {
+            margin-right: 30px;
+            opacity: 1 !important;
+            order: 1;
+            font-weight: 400;
+
+            > a {
+              color: #fff;
+              position: relative;
+              text-decoration: none;
+              text-transform: uppercase;
+              z-index: 1;
+              display: block;
+              cursor: pointer;
+              background-color: transparent;
+
+              img {
+                height: 21px;
+                width: 170px;
+                vertical-align: middle;
+                border: 0;
+                outline: none !important;
+                color: #fff;
+                text-transform: uppercase;
+                cursor: pointer;
+
+              }
+
+            }
+
+            > button {
+              display: none;
+            }
+
+          }
+
+          &.second {
+            flex-grow: 1;
+            order: 2;
+            font-weight: 400;
+          }
+
+          &.third {
+            order: 3;
+            position: relative;
+
+            > a {
+              color: #fff;
+              position: relative;
+              text-decoration: none;
+              text-transform: uppercase;
+              z-index: 1;
+              cursor: pointer;
+              background-color: transparent;
+
+              > i {
+
+              }
+
+              > span {
+                display: none;
+              }
+
+            }
+          }
+
+          &.fourth {
+            order: 4;
+            margin-right: 25px;
+
+            > a {
+              color: #fff;
+              position: relative;
+              text-decoration: none;
+              text-transform: uppercase;
+              z-index: 1;
+              cursor: pointer;
+              background-color: transparent;
+              font-weight: 400;
+
+              > img {
+
+                &.first {
+                  width: 15px;
+                  height: 15px;
+                  margin-bottom: 2px;
+                  vertical-align: middle;
+                  border: 0;
+                  color: #fff;
+                  text-transform: uppercase;
+                }
+
+                &.second {
+                  display: none;
+                }
+
+              }
+
+            }
+
+          }
+
+          &:last-of-type {
+
+            margin-right: 25px;
+            order: 5;
+
+
+            > a {
+              color: #fff;
+              position: relative;
+              text-decoration: none;
+              text-transform: uppercase;
+              z-index: 1;
+              cursor: pointer;
+              background-color: transparent;
+              font-weight: 400;
+
+            }
+          }
+
+        }
+      }
+
+    }
+
+  }
+
+}

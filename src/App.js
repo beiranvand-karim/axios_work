@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import WalletHome from "./containers/WalletHome";
+import Wallet from "./containers/Wallet";
 import './App.scss';
 
 class App extends Component {
   render() {
     return (
-        <WalletHome />
+        <Wallet />
     );
   }
 }

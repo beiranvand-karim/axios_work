@@ -1,13 +1,13 @@
 import React from 'react';
-import './DashboardHome.scss';
 import spinner from '../../assets/wallet/img/spinner-8de10c3e9fd9f1c447099e6d23b5c24931c019da.gif';
 import selectArrow from '../../assets/wallet/img/select-arrow-f0c58cd22576da74feefda596447c87d18d9e660.png';
+import './DashboardHome.scss';
 
 export  default function DashboardHome() {
 
     return (
 
-        <div className="main-container">
+        <div className="DashboardHome main-container">
 
             <div className="top-view">
 
@@ -15,10 +15,10 @@ export  default function DashboardHome() {
                 <div className="flex-center flex-between height-100 width-100-mobile">
 
 
-                    <div className="flex-column flex-center-mobile width-100-mobile">
+                    <div className="first flex-column flex-center-mobile width-100-mobile">
 
 
-                        <div className="flex-baseline heavy hidden-xs">
+                        <div className="first flex-baseline heavy hidden-xs">
 
 
                             <h1 className="f-28 my-wallet flex upper mtn em-200">Be your own bank.
@@ -29,7 +29,7 @@ export  default function DashboardHome() {
 
                         </div>
 
-                        <div className="visible-xs">
+                        <div className="second visible-xs">
 
                             <div className="heavy flex-column flex-align-end right-align center-mobile flex-center-mobile main-balance">
 
@@ -59,7 +59,7 @@ export  default function DashboardHome() {
 
                         </div>
 
-                        <div className="flex flex-center-mobile">
+                        <div className="third flex flex-center-mobile">
 
 
                             <button className="btn button-default button-short-wide type-h5 mrm">
@@ -87,7 +87,7 @@ export  default function DashboardHome() {
                     </div>
 
 
-                    <div className="hidden-xs">
+                    <div className="second hidden-xs">
 
                         <div className="heavy flex-column flex-align-end right-align center-mobile flex-center-mobile main-balance">
 

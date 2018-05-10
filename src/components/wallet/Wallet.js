@@ -3,7 +3,9 @@ import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import BitCoinTransactions from "./BitCoinTransactions";
 import EtherTransactions from "./EtherTransactions";
 import BitCoinCashTransactions from "./BitCoinCashTransactions";
+import Dashboard from "./Dashboard";
 import DashboardHome from "./DashboardHome";
+
 import './Wallet.scss';
 
 export default function Wallet() {
@@ -14,7 +16,6 @@ export default function Wallet() {
 
 
             <div className="wallet-container">
-
 
                 <div className="left-nav">
 
@@ -373,14 +374,14 @@ export default function Wallet() {
 
                 </div>
 
-
+                <DashboardHome />
 
                 <Switch>
 
                     <Route path='/btc/transactions' component={BitCoinTransactions} />
                     <Route path='/eth/transactions' component={EtherTransactions} />
                     <Route path='/bch/transactions' component={BitCoinCashTransactions} />
-                    <Route path='/wallet/home' component={DashboardHome} />
+                    <Route path='/wallet/home' component={Dashboard} />
 
 
                 </Switch>

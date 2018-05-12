@@ -2,7 +2,7 @@ import React from 'react';
 import TopView from "./TopView";
 import './DashboardHome.scss';
 
-export  default function DashboardHome() {
+export default function DashboardHome() {
 
     return (
 

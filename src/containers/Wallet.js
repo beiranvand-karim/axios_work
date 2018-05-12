@@ -4,9 +4,9 @@ import BitCoinTransactions from "../components/wallet/BitCoinTransactions";
 import EtherTransactions from "../components/wallet/EtherTransactions";
 import BitCoinCashTransactions from "../components/wallet/BitCoinCashTransactions";
 import Dashboard from "../components/wallet/Dashboard";
-import DashboardHome from "../components/wallet/DashboardHome";
 import RightNav from "../components/wallet/RightNav";
 import WalletHeader from "../components/wallet/WalletHeader";
+import TopView from "../components/wallet/TopView";
 import './Wallet.scss';
 
 export default function Wallet() {
@@ -20,21 +20,29 @@ export default function Wallet() {
                 <div className="wallet-container">
 
                     <RightNav />
-                    <DashboardHome />
 
-                    <Switch>
+                    <div className="DashboardHome main-container">
 
-                        <Route path='/btc/transactions' component={BitCoinTransactions} />
-                        <Route path='/eth/transactions' component={EtherTransactions} />
-                        <Route path='/bch/transactions' component={BitCoinCashTransactions} />
-                        <Route path='/wallet/home' component={Dashboard} />
+                        <TopView />
 
-                    </Switch>
+                        <div className="right-container flex flex-column">
+
+                            <Switch>
+
+                                <Route path='/btc/transactions' component={BitCoinTransactions} />
+                                <Route path='/eth/transactions' component={EtherTransactions} />
+                                <Route path='/bch/transactions' component={BitCoinCashTransactions} />
+                                <Route path='/wallet/home' component={Dashboard} />
+
+                            </Switch>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
             </div>
-
 
         </Router>
 
